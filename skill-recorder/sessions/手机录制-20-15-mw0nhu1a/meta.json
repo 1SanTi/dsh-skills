@@ -1,0 +1,12 @@
+{
+  "id": "手机录制-20-15-mw0nhu1a",
+  "name": "手机录制 20:15",
+  "dir": "/data/user/0/app.dsh.mobile/files/dsh-home/skills/skill-recorder/sessions/手机录制-20-15-mw0nhu1a",
+  "interval": 400,
+  "tickDiff": 0.04,
+  "burstMs": 200,
+  "burstWindow": 900,
+  "startedAt": "2026-11-03T12:15:08.219Z",
+  "endedAt": "2026-11-03T12:15:43.047Z",
+  "audio": null
+}
