@@ -1,0 +1,251 @@
+{
+  "goal": "手机录制 12:57",
+  "source": {
+    "session": "手机录制-12-57-mvxcytb2",
+    "screens": 13,
+    "frames": 65
+  },
+  "steps": [
+    {
+      "id": "s1",
+      "desc": "点击「停止 00:00」",
+      "target": {
+        "text": [
+          "停止 00:00"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "停止 00:02"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      }
+    },
+    {
+      "id": "s2",
+      "desc": "点击「新建会话」",
+      "target": {
+        "text": [
+          "新建会话"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "【第3期】百字联盟一班…"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s3",
+      "desc": "点击「12:01」 ×2",
+      "target": {
+        "text": [
+          "12:01"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "[＠所有人]王娟:我们班娃也预约"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "repeat": 2,
+      "needsReview": true
+    },
+    {
+      "id": "s4",
+      "desc": "点击「|微信」",
+      "target": {
+        "text": [
+          "|微信"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "2026省级工作室管理员"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s5",
+      "desc": "点击「微信」",
+      "target": {
+        "text": [
+          "微信"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "8服务"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s6",
+      "desc": "点击「C正在加戴...」",
+      "target": {
+        "text": [
+          "C正在加戴..."
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "在这里看我的视频号●〉"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      }
+    },
+    {
+      "id": "s7",
+      "desc": "点击「|最近使用」",
+      "target": {
+        "text": [
+          "|最近使用"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "最近使便用 链接"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s8",
+      "desc": "点击「45个朋友●」",
+      "target": {
+        "text": [
+          "45个朋友●"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "等5个用友●"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s9",
+      "desc": "点击「等5个用友●」",
+      "target": {
+        "text": [
+          "等5个用友●"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "45个朋友●"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s10",
+      "desc": "点击「8服务」",
+      "target": {
+        "text": [
+          "8服务"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "DSH Mobile"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s11",
+      "desc": "点击「微信」",
+      "target": {
+        "text": [
+          "微信"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "检查无障碍是否开启 — DeepSeek Harness"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    }
+  ]
+}
