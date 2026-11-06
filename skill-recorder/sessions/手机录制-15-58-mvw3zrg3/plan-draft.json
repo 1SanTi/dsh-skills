@@ -1,0 +1,527 @@
+{
+  "goal": "手机录制 15:58",
+  "source": {
+    "session": "手机录制-15-58-mvw3zrg3",
+    "screens": 25,
+    "frames": 119
+  },
+  "steps": [
+    {
+      "id": "s1",
+      "desc": "点击「新建会话」",
+      "target": {
+        "text": [
+          "新建会话"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "三体"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s2",
+      "desc": "点击「|微信」",
+      "target": {
+        "text": [
+          "|微信"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "服务"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s3",
+      "desc": "点击「区朋友国」",
+      "target": {
+        "text": [
+          "区朋友国"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "四朋友图"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s4",
+      "desc": "点击「服务」",
+      "target": {
+        "text": [
+          "服务"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "|发表评论:"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s5",
+      "desc": "点击「|发表评论:」",
+      "target": {
+        "text": [
+          "|发表评论:"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "|後表评论:"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      }
+    },
+    {
+      "id": "s6",
+      "desc": "点击「|後表评论:」",
+      "target": {
+        "text": [
+          "|後表评论:"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "发表评论:"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      }
+    },
+    {
+      "id": "s7",
+      "desc": "点击「发表评论:」",
+      "target": {
+        "text": [
+          "发表评论:"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "服务"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s8",
+      "desc": "点击「服务」",
+      "target": {
+        "text": [
+          "服务"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "|发表评论:"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s9",
+      "desc": "点击「|发表评论:」",
+      "target": {
+        "text": [
+          "|发表评论:"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "服务"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s10",
+      "desc": "点击「b23, tv」",
+      "target": {
+        "text": [
+          "b23, tv"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "教案,荣營整理,材"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s11",
+      "desc": "点击「料表格填写等等)」",
+      "target": {
+        "text": [
+          "料表格填写等等)"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "洲要一对一"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s12",
+      "desc": "点击「2026年<」",
+      "target": {
+        "text": [
+          "2026年<"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "今天"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s13",
+      "desc": "点击「今天」",
+      "target": {
+        "text": [
+          "今天"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "本周"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s14",
+      "desc": "点击「本周」",
+      "target": {
+        "text": [
+          "本周"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "今天"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s15",
+      "desc": "点击「服务」",
+      "target": {
+        "text": [
+          "服务"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "DeepSeek Harness"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s16",
+      "desc": "点击「停止 00:55」",
+      "target": {
+        "text": [
+          "停止 00:55"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "停止 00:56"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      }
+    },
+    {
+      "id": "s17",
+      "desc": "点击「停止 00:56」",
+      "target": {
+        "text": [
+          "停止 00:56"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "停止 01:03"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      }
+    },
+    {
+      "id": "s18",
+      "desc": "点击「停止 01:03」",
+      "target": {
+        "text": [
+          "停止 01:03"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "停止 01:04"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      }
+    },
+    {
+      "id": "s19",
+      "desc": "点击「停止 01:04」",
+      "target": {
+        "text": [
+          "停止 01:04"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "停止 01:06"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      }
+    },
+    {
+      "id": "s20",
+      "desc": "点击「停止 01:06」",
+      "target": {
+        "text": [
+          "停止 01:06"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "停止 01:07"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      }
+    },
+    {
+      "id": "s21",
+      "desc": "点击「停止 01:07」",
+      "target": {
+        "text": [
+          "停止 01:07"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "停止 01:08"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      }
+    },
+    {
+      "id": "s22",
+      "desc": "点击「停止 01:08」",
+      "target": {
+        "text": [
+          "停止 01:08"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "停止 01:10"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      }
+    },
+    {
+      "id": "s23",
+      "desc": "点击「停止 01:10」",
+      "target": {
+        "text": [
+          "停止 01:10"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "停止 01:11"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      }
+    },
+    {
+      "id": "s24",
+      "desc": "点击「停止 01:11」",
+      "target": {
+        "text": [
+          "停止 01:11"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "停止 01:19"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      }
+    }
+  ]
+}
