@@ -1,0 +1,27 @@
+{
+ "steps": [
+  {
+   "t": "2026-11-03T12:44:16.743Z",
+   "pkg": "com.tencent.mm",
+   "tap": "10月23日",
+   "appeared": [
+    "x-md-dc1dddad8641",
+    "Hxa:rr、4",
+    "10月23日 me-intro-layout-ff68a6b2)",
+    "ent"
+   ],
+   "fromTexts": [
+    "|微信",
+    "108班班级群(初二)",
+    "周五"
+   ],
+   "toTexts": [
+    "|微信",
+    "108班班级群(初二)",
+    "周五"
+   ]
+  }
+ ],
+ "events": 5,
+ "updatedAt": "2026-11-03T12:44:22.260Z"
+}
