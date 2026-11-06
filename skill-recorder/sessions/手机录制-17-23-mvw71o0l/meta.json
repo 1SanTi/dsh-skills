@@ -1,0 +1,12 @@
+{
+  "id": "手机录制-17-23-mvw71o0l",
+  "name": "手机录制 17:23",
+  "dir": "/data/user/0/app.dsh.mobile/files/dsh-home/skills/skill-recorder/sessions/手机录制-17-23-mvw71o0l",
+  "interval": 1000,
+  "tickDiff": 0.04,
+  "burstMs": 200,
+  "burstWindow": 900,
+  "startedAt": "2026-10-31T09:23:35.575Z",
+  "endedAt": "2026-10-31T09:24:01.747Z",
+  "audio": null
+}
