@@ -1,0 +1,12 @@
+{
+  "id": "手机录制-12-57-mvxcytb2",
+  "name": "手机录制 12:57",
+  "dir": "/data/user/0/app.dsh.mobile/files/dsh-home/skills/skill-recorder/sessions/手机录制-12-57-mvxcytb2",
+  "interval": 1000,
+  "tickDiff": 0.04,
+  "burstMs": 200,
+  "burstWindow": 900,
+  "startedAt": "2026-11-01T04:57:06.286Z",
+  "endedAt": "2026-11-01T04:57:45.928Z",
+  "audio": null
+}
