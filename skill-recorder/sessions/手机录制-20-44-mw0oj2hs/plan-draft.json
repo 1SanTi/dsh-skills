@@ -1,0 +1,119 @@
+{
+  "goal": "手机录制 20:44",
+  "source": {
+    "session": "手机录制-20-44-mw0oj2hs",
+    "screens": 6,
+    "frames": 35
+  },
+  "steps": [
+    {
+      "id": "s1",
+      "desc": "点击「停止 00:00」",
+      "target": {
+        "text": [
+          "停止 00:00"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "停止 00:01"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      }
+    },
+    {
+      "id": "s2",
+      "desc": "点击「新建会话」",
+      "target": {
+        "text": [
+          "新建会话"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "|微信"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s3",
+      "desc": "点击「10月23日」",
+      "target": {
+        "text": [
+          "10月23日"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "x-md-dc1dddad8641"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s4",
+      "desc": "点击「|微信」",
+      "target": {
+        "text": [
+          "|微信"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "DSH Mobile"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s5",
+      "desc": "点击「微信」",
+      "target": {
+        "text": [
+          "微信"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "湖南学法网登录信息 — DeepSeek Harness"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    }
+  ]
+}
