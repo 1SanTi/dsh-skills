@@ -1,0 +1,180 @@
+{
+  "goal": "手机录制 17:23",
+  "source": {
+    "session": "手机录制-17-23-mvw71o0l",
+    "screens": 9,
+    "frames": 32
+  },
+  "steps": [
+    {
+      "id": "s1",
+      "desc": "点击「新建会话」",
+      "target": {
+        "text": [
+          "新建会话"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "幕布"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s2",
+      "desc": "点击「ima」",
+      "target": {
+        "text": [
+          "ima"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "frameChanged": true
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s3",
+      "desc": "点击「哔哩哔哩」",
+      "target": {
+        "text": [
+          "哔哩哔哩"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "frameChanged": true
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s4",
+      "desc": "点击「幕布」",
+      "target": {
+        "text": [
+          "幕布"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "frameChanged": true
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s5",
+      "desc": "点击「全部清除」",
+      "target": {
+        "text": [
+          "全部清除"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "10月31日 周六"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s6",
+      "desc": "点击「🆘 求助」",
+      "target": {
+        "text": [
+          "🆘 求助"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "学苑 📚"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s7",
+      "desc": "点击「😊, 好事」",
+      "target": {
+        "text": [
+          "😊, 好事"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "🎨, 🎨 心绘小屋, AI 一键生成教学漫画与科普图, ›"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s8",
+      "desc": "点击「🌟 积极心理学」",
+      "target": {
+        "text": [
+          "🌟 积极心理学"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "秒哒安装密钥 — DeepSeek Harness"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    }
+  ]
+}
