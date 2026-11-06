@@ -1,0 +1,228 @@
+{
+  "goal": "手机录制 20:15",
+  "source": {
+    "session": "手机录制-20-15-mw0nhu1a",
+    "screens": 11,
+    "frames": 52
+  },
+  "steps": [
+    {
+      "id": "s1",
+      "desc": "点击「处理中…」",
+      "target": {
+        "text": [
+          "处理中…"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "停止 00:01"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      }
+    },
+    {
+      "id": "s2",
+      "desc": "点击「新建会话」",
+      "target": {
+        "text": [
+          "新建会话"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "浏览器"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s3",
+      "desc": "点击「浏览器」",
+      "target": {
+        "text": [
+          "浏览器"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "湖南学法网登录信息 — DeepSeek Harness"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s4",
+      "desc": "点击「停止 00:04」",
+      "target": {
+        "text": [
+          "停止 00:04"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "标准模式"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s5",
+      "desc": "点击「新建会话」",
+      "target": {
+        "text": [
+          "新建会话"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "国日衡东篷源刘总(刘起彪)"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s6",
+      "desc": "点击「17,18」",
+      "target": {
+        "text": [
+          "17,18"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "国日衡东篷源刘急(刘起彪)"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s7",
+      "desc": "点击「17:18」",
+      "target": {
+        "text": [
+          "17:18"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "【秒哒】灵感碰撞交."
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s8",
+      "desc": "点击「姚俊杰」",
+      "target": {
+        "text": [
+          "姚俊杰"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "浏览器"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s9",
+      "desc": "点击「浏览器」",
+      "target": {
+        "text": [
+          "浏览器"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "湖南学法网登录信息 — DeepSeek Harness"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      },
+      "needsReview": true
+    },
+    {
+      "id": "s10",
+      "desc": "点击「停止 00:32」",
+      "target": {
+        "text": [
+          "停止 00:32"
+        ]
+      },
+      "action": {
+        "type": "tap"
+      },
+      "verify": {
+        "anyText": [
+          "处理中…"
+        ]
+      },
+      "onFail": {
+        "retry": 1,
+        "then": "escalate"
+      }
+    }
+  ]
+}
