@@ -1,0 +1,4 @@
+interface:
+  display_name: "科研绘图"
+  short_description: "设计真实、可读、可复现且能按最终尺寸完整验收的科研图表"
+  default_prompt: "使用 $scientific-figure-cn 根据这份数据设计科研图表，并完成图注、诚信与导出复核。"
