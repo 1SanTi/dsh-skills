@@ -1,0 +1,21 @@
+{
+  "name": "dsh-skill-recorder",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Skill Recorder: a record button beside the composer that drives skills/skill-recorder/scripts/recorder.mjs",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": ["index.js", "client.js", "cordis.patch.yml", "package.json"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+    }
+  }
+}
