@@ -1,0 +1,99 @@
+{
+  "skill": "asr-transcribe",
+  "version": "1.4.0",
+  "cases": [
+    {
+      "id": "audio-m4a",
+      "prompt": "把这段 m4a 录音转成文字",
+      "expect_trigger": true,
+      "assertions": [
+        "本地优先",
+        "先检测依赖",
+        "无云端密钥也可普通本地转写"
+      ]
+    },
+    {
+      "id": "subtitles",
+      "prompt": "把这个 mp4 的语音做成 SRT 和 VTT，不要翻译",
+      "expect_trigger": true,
+      "assertions": [
+        "两种字幕实际生成",
+        "不自动翻译或压制字幕"
+      ]
+    },
+    {
+      "id": "preview",
+      "prompt": "先试转开头 30 秒",
+      "expect_trigger": true,
+      "assertions": [
+        "preview-seconds 30",
+        "不报告全文完成"
+      ]
+    },
+    {
+      "id": "speakers",
+      "prompt": "访谈 3 人，区分说话人",
+      "expect_trigger": true,
+      "assertions": [
+        "diarize",
+        "模型权限检查",
+        "失败不静默降级",
+        "不猜身份"
+      ]
+    },
+    {
+      "id": "offline",
+      "prompt": "完全用已缓存的本地模型转写",
+      "expect_trigger": true,
+      "assertions": [
+        "offline",
+        "普通 faster-whisper",
+        "不自动上传云端"
+      ]
+    },
+    {
+      "id": "cloud-authorized",
+      "prompt": "这份公开录音允许用 OpenAI 转写",
+      "expect_trigger": true,
+      "assertions": [
+        "已有授权无需重复询问",
+        "cloud-provider openai",
+        "费用与权限按账户实际情况"
+      ]
+    },
+    {
+      "id": "minutes-after",
+      "prompt": "把这个会议录音转完继续写纪要",
+      "expect_trigger": true,
+      "assertions": [
+        "先转写",
+        "保留原稿",
+        "继续用户目标"
+      ]
+    },
+    {
+      "id": "text-only",
+      "prompt": "根据这份已有文字稿写纪要",
+      "expect_trigger": false,
+      "assertions": [
+        "不调用转写脚本"
+      ]
+    },
+    {
+      "id": "polish-only",
+      "prompt": "润色这篇访谈文字稿",
+      "expect_trigger": false,
+      "assertions": [
+        "不重新转写"
+      ]
+    },
+    {
+      "id": "image-ocr",
+      "prompt": "把图片上的字识别出来",
+      "expect_trigger": false,
+      "assertions": [
+        "不调用 ASR"
+      ]
+    }
+  ]
+}
