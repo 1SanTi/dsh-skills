@@ -1,0 +1,12 @@
+# 凭据：永不进版本库
+.miaoda_key
+*.key
+.env
+.env.*
+
+# 运行态数据
+skill-recorder/sessions/
+__pycache__/
+*.pyc
+.DS_Store
+*.log
