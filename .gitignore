@@ -10,3 +10,9 @@ __pycache__/
 *.pyc
 .DS_Store
 *.log
+
+# weekly security audit
+*.pem
+.env*
+frames.jsonl
+storyboard.md
