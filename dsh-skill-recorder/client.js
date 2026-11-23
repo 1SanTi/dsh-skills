@@ -106,21 +106,21 @@ window.__ModuleLoader__.load({
       const elapsed = rec && rec.startedAt ? fmt(Date.now() - new Date(rec.startedAt).getTime()) : null;
       const dotColor = busy ? '#9ca3af' : rec ? '#ef4444' : '#10b981';
 
+      // 纯图标按钮（不写文字）：30x30 圆形，状态靠颜色/动效表达，尺寸固定不会挤动整排。
       const buttonStyle = {
         display: 'inline-flex',
         alignItems: 'center',
-        gap: 6,
-        height: 28,
-        padding: '0 10px',
+        justifyContent: 'center',
+        height: 30,
+        width: 30,
+        minWidth: 30,
+        padding: 0,
         borderRadius: 999,
         border: '1px solid ' + (rec ? 'rgba(239,68,68,.45)' : 'var(--dsw-alias-border-l2,#e5e7eb)'),
-        background: rec ? 'rgba(239,68,68,.08)' : 'transparent',
+        background: rec ? 'rgba(239,68,68,.10)' : 'transparent',
         color: 'var(--dsw-alias-label-secondary,inherit)',
         font: 'inherit',
-        fontSize: 12,
-        lineHeight: '1',
         cursor: busy ? 'progress' : 'pointer',
-        whiteSpace: 'nowrap',
         flex: 'none',
       };
 
@@ -133,20 +133,23 @@ window.__ModuleLoader__.load({
             type: 'button',
             onClick,
             disabled: busy || !ready,
-            title: rec ? '停止录制并生成草案' : '录一遍手机操作，生成可回放的技能草案',
+            className: 'dshr-ic-btn',
+            'aria-label': busy ? '制作中' : rec ? '停止录制' : '录制',
+            title: rec ? '停止录制并生成草案（已录 ' + elapsed + '）' : '录一遍手机操作，生成可回放的技能草案',
             style: buttonStyle,
           },
+          // 录制图标：单点圆点，未录制绿色、录制中放大变红并呼吸、处理中灰色
           h('span', {
             style: {
-              width: 8,
-              height: 8,
+              width: rec ? 10 : 8,
+              height: rec ? 10 : 8,
               borderRadius: '50%',
               background: dotColor,
-              boxShadow: rec ? '0 0 0 3px rgba(239,68,68,.14)' : 'none',
-              animation: rec ? 'dshRecPulse 1.6s ease-in-out infinite' : 'none',
+              boxShadow: rec ? '0 0 0 3px rgba(239,68,68,.16)' : 'none',
+              animation: busy || rec ? 'dshRecPulse 1.6s ease-in-out infinite' : 'none',
+              transition: 'width .15s ease, height .15s ease, box-shadow .15s ease',
             },
-          }),
-          h('span', null, busy ? '处理中…' : rec ? '停止 ' + elapsed : '录制')
+          })
         ),
         note
           ? h(
@@ -155,7 +158,8 @@ window.__ModuleLoader__.load({
                 style: {
                   fontSize: 11,
                   lineHeight: '16px',
-                  maxWidth: 240,
+                  maxWidth: 160,
+                  flex: 'none',
                   overflow: 'hidden',
                   textOverflow: 'ellipsis',
                   whiteSpace: 'nowrap',
@@ -171,7 +175,15 @@ window.__ModuleLoader__.load({
               note.text
             )
           : null,
-        h('style', null, '@keyframes dshRecPulse{0%,100%{opacity:1}50%{opacity:.35}}')
+        h(
+          'style',
+          null,
+          '@keyframes dshRecPulse{0%,100%{opacity:1}50%{opacity:.35}}' +
+            '.dshr-ic-btn{transition:background .16s ease,border-color .16s ease,color .16s ease,transform .12s ease}' +
+            '.dshr-ic-btn:hover{background:var(--dsw-alias-interactive-bg-hover,rgba(0,0,0,.045));color:var(--dsw-alias-label-primary,inherit)}' +
+            '.dshr-ic-btn:active{transform:scale(.9)}' +
+            '.dshr-ic-btn:disabled{opacity:.55;cursor:progress}'
+        )
       );
     }
 
@@ -449,23 +461,58 @@ window.__ModuleLoader__.load({
           {
             type: 'button',
             onClick: toggle,
+            className: 'dshr-ic-btn',
+            'aria-label': sessions.length ? '录制库，共 ' + sessions.length + ' 条' : '录制库',
             style: {
-              height: 28,
-              padding: '0 10px',
+              display: 'inline-flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              height: 30,
+              width: 30,
+              minWidth: 30,
+              padding: 0,
               borderRadius: 999,
-              border: '1px solid var(--dsw-alias-border-l2,#e5e7eb)',
+              border: '1px solid ' + (open ? 'rgba(59,130,246,.45)' : 'var(--dsw-alias-border-l2,#e5e7eb)'),
               background: open ? 'rgba(59,130,246,.10)' : 'transparent',
               color: 'var(--dsw-alias-label-secondary,inherit)',
               font: 'inherit',
-              fontSize: 12,
-              lineHeight: '1',
               cursor: 'pointer',
-              whiteSpace: 'nowrap',
               flex: 'none',
+              position: 'relative',
             },
-            title: '选择以前录过的操作',
+            title: sessions.length ? '录制库（' + sessions.length + ' 条）' : '选择以前录过的操作',
           },
-          sessions.length ? `录制库 ${sessions.length}` : '录制库'
+          // 录制库图标：播放框，读作「历史录制的片子」
+          h(
+            'svg',
+            { width: 16, height: 16, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 1.6, strokeLinecap: 'round', strokeLinejoin: 'round', 'aria-hidden': true },
+            h('rect', { x: 3, y: 5, width: 18, height: 14, rx: 2.5 }),
+            h('path', { d: 'M10.5 9.6v4.8l3.8-2.4z', fill: 'currentColor', stroke: 'none' })
+          ),
+          sessions.length
+            ? h(
+                'span',
+                {
+                  style: {
+                    position: 'absolute',
+                    top: -5,
+                    right: -5,
+                    minWidth: 15,
+                    height: 15,
+                    padding: '0 4px',
+                    borderRadius: 8,
+                    background: 'var(--dsw-alias-state-business-primary,#3b82f6)',
+                    color: '#fff',
+                    fontSize: 9,
+                    fontWeight: 600,
+                    lineHeight: '15px',
+                    textAlign: 'center',
+                    boxSizing: 'border-box',
+                  },
+                },
+                sessions.length > 99 ? '99+' : String(sessions.length)
+              )
+            : null
         ),
         panel
       );

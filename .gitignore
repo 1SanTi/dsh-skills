@@ -6,6 +6,8 @@
 
 # 运行态数据
 skill-recorder/sessions/
+skill-recorder/plans/
+skill-recorder/sessions/.active.json
 __pycache__/
 *.pyc
 .DS_Store
